@@ -1,13 +1,13 @@
 package com.example.jpa.jpa.service;
 
 import com.example.jpa.jpa.entity.User;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-@Repository
+@Service
 @Transactional
 public class UserDaoService {
 
