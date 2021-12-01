@@ -58,3 +58,27 @@
 34. Spring Data JPA makes it easy to work with entities
 35. Repository further simplifies it by providing all methods in one place which can be implemented by as many other
     repositories
+36. Hibernate Common Annotations
+    1. @Entity
+        1. Used to make any class as an entity
+        2. We map this class with a @Table annotation
+        3. Used to create table
+    2. @Table
+        1. Used to change the table details
+    3. @Id
+        1. Used to Identify Primary key for the table
+    4. @GeneratedValue
+        1. Used to automatically generate id for the primary key using strategy or sequence if provided
+    5. @Column
+        1. Used to identify columns respective to fields in the class
+        2. Used to specify mapping of columns to the fields in the class
+        3. Also used to change the column name in table and other details for the columns
+    6. @Transient
+        1. Tells hibernate to not save this field
+        2. Also used to ignore the columns from getting created on a table
+        3. We will have to use @Transient annotation on the top of field name which we want to avoid creation
+    7. @Temporal
+        1. @Temporal annotation over date field is used to specify the format in which we need to save date in database
+    8. @Lob
+        1. Lob tells hibernate that it object is large object
+    9. @OneToOne, @OneToMany , @ManyToOne , @ManyToMany
